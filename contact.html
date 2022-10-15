@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAFALDA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">MAFALDAS</h1>
+        <ul class="nav-link">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="resume.html">Resumé</a></li>
+            <li  class="ctn active"><a href="contact.html">Contact</a></li>
+        </ul>
+        <img src="./img/menu-btn.png" alt="" class="menu-btn">
+    </nav>
+    <header>
+        <div class="container">
+                <h3>Contact Form</h3>
+                
+                <ul><label for="fullname">Full Name</label></ul>
+                <ul><input placeholder="Your full name.." type="text" id="fullname"></ul>
+                
+                
+                <ul><label for="email">Email Address</label></ul>
+                <ul><input placeholder="Your email.." type="text" id="email"></ul>
+                
+                
+                <ul><label for="phone">Phone Number</label></ul>
+                <ul><input placeholder="Your number.." type="text" id="phone"></ul>
+                    
+                    <label for="subject">Subject</label>
+                    <textarea placeholder="Type your message here.." name="subject" id="subject" style="height: 100px;"></textarea>
+
+                    <input class="ctn" type="submit" value="Submit">
+        </div>
+    </header>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-link')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>

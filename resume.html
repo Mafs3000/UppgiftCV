@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAFALDA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">MAFALDAS</h1>
+        <ul class="nav-link">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li class="active"><a href="resume.html">Resumé</a></li>
+            <li class="ctn"><a href="contact.html">Contact</a></li>
+        </ul>
+        <img src="./img/menu-btn.png" alt="" class="menu-btn">
+    </nav>
+    <header>
+        <div class="header-content">
+            <h2>Mafaldas Resumé</h2>
+            <div class="line"></div>
+            <h1 class="onef">Feel free to read the Resumé</h1>
+            <a href="#resume" class="ctn">Click Here</a>
+        </div>
+    </header>
+
+    <section id="resume">
+        <div class="title">
+            <h1>Resumé</h1>
+            <div class="line"></div>
+        </div>
+        <div class="resume-container">
+            <h2>OBJECTIVE</h2>
+            <p>I am a fast-learning girl who likes to work carefully at a high pace, both individually and in a team, and is also a quick-witted problem solver when needed.</p>
+            
+            <h2>EDUCATION</h2>  
+            <p>Technology program, specialisation Information and Media Technology
+               <br>Järfälla Gymnasium
+            </p>
+        
+            <h2>WORK/JOB EXPERIENCES</h2>
+            <p></p>
+            <h4>TEAM LEADER/KEY USER• ICA GRUPPEN AB • 08/2021-ongoing</h4>
+               <p>E-Commerce Warehouse
+               <br>As a team leader in an E-Commerce Warehouse the job is to be the group leader's right hand, hold the introduction to the workplace and teach the newcomers. Keep track of all departments in the warehouse, goods receipt, pick stations and the unloading process. Solve different problems that occur during the day.
+            </p>
+
+            <h4>INTERNSHIP• ERICSSON RADIO SYSTEMS AB • 01/2021-04/2021</h4>
+            <p>Internship runned by Tekniksprånget at Ericsson Radio Systems AB
+               <br>(Tekniksprånget is an internship program run by  Kungl. The Academy of Engineering Sciences (IVA), where Sweden's employers, together with the government, are investing in securing the supply of skills for the future.)
+               <br>Tried the life of an engineer by shadowing a civil engineer. 
+               <br>Responsible for certain presentations and mailings of the department's monthly letters with summaries of various project statuses.
+            </p>
+
+            <h4>WAREHOUSE ASSOCIATE• ARLA FOODS • 04/2020-08/2021</h4>
+            <p>Often worked under high tempo.
+               <br>Excelled when put in stressful situations.
+               <br>Truck driver's licence.
+            </p>
+
+            <h4>GARDENER• JÄRFÄLLA KOMMUN • SUMMER 2018</h4>
+            <p>Gardening in the area around a fire station, which meant that part of the working time I also received training in 1st aid and see the fire station inside and got an insight into what it is like to work as a firefighter.
+            </p>
+
+            <h4>SALES ASSOCIATE• THE FOOD WORLD • 06/2017-04/2018</h4>
+            <p>Store assistant with tasks such as unpacking on shelves, refurnishing the store as well as signage and some cash jobs.
+            </p>
+
+            <h4>SALES ASSOCIATE• CHILLI AB • 06/2015-01/2016</h4>
+            <p>Internship with the task of unpacking on shelves, price marking goods and decorating the store.
+            </p>
+
+            <h4>BABY SITTING</h4>
+            <p>I have also worked extra as a babysitter in my residential area and am very popular with both children and parents.
+            </p>
+            <p></p>
+            <h2>SKILLS</h2>
+            <p>
+                <div class="resume-list">
+                    <li>Overall has a very good understanding of (object-oriented) programming</li>
+                    <li>Adobe Illustrator</li>
+                    <li>Adobe Photoshop</li>
+                    <li>Microsoft Office</li>
+                    <li>Native: Swedish + Portuguese</li>
+                    <li>Fluent: English + Spanish</li> 
+                    <li>Truck drivers licence truck type A1-4 & B1</li>
+                </div>
+            </p>
+        </div>
+    </section>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-link')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>
